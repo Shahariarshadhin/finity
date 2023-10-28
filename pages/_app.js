@@ -1,10 +1,10 @@
 import "@/styles/globals.css";
 
-
 import { useEffect, useRef } from "react";
 import { useRouter } from "next/router";
 
-// import LoadingBar from "react-top-loading-bar";
+import LoadingBar from "react-top-loading-bar";
+import { StyledEngineProvider } from "@mui/material";
 
 // import { SessionProvider, useSession, signOut } from "next-auth/react";
 // import { SnackbarProvider } from "notistack";
@@ -37,9 +37,9 @@ export default function App({
     };
   }, [router]);
   return (
-    // <SnackbarProvider maxSnack={3}>
-    //   <LoadingBar color="#2F7CE3" ref={ref} />
-    getLayout(<Component {...pageProps} />)
-    // </SnackbarProvider>
+    <StyledEngineProvider injectFirst>
+      <LoadingBar color="#2F7CE3" ref={ref} />
+      {getLayout(<Component {...pageProps} />)}
+    </StyledEngineProvider>
   );
 }

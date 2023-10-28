@@ -1,18 +1,38 @@
+import { Rating } from "@mui/material";
 import Image from "next/image";
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import { styled } from '@mui/material/styles';
 
 const UserRating = () => {
+
+  const StyledRating = styled(Rating)({
+    '& .MuiRating-iconFilled': {
+      color: '#ff6d75',
+    },
+    '& .MuiRating-iconHover': {
+      color: '#ff3d47',
+    },
+  });
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 my-[152px] text-center lg:text-left ">
       
         <div className="py-6">
           <h1 className="text-[#1D293F] font-bold text-[40px]">10k</h1>
-          <p>Love</p>
+          <StyledRating
+        name="customized-color"
+        defaultValue={2}
+        getLabelText={(value) => `${value} Heart${value !== 1 ? 's' : ''}`}
+        precision={0.5}
+        icon={<FavoriteIcon fontSize="inherit" />}
+        emptyIcon={<FavoriteBorderIcon fontSize="inherit" />}
+      />
           <p>Active Downloads</p>
           <p className="text-[#258AFF]">On Websites</p>
         </div>
         <div className="py-6">
           <h1 className="text-[#1D293F] font-bold text-[40px]">4.7</h1>
-          <p>Rating</p>
+          <Rating name="half-rating" defaultValue={5} precision={0.5} />
           <p>1,938 Rating</p>
           <p className="text-[#258AFF]">WordPress Community</p>
         </div>

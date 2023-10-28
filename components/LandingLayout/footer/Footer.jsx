@@ -1,6 +1,7 @@
 import { TextField } from "@mui/material";
 
 const Footer = () => {
+  
   return (
     <div className="container mx-auto mb-[80px]">
       <div className="grid grid-cols-1 lg:grid-cols-4">
@@ -38,6 +39,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+    
     </div>
   );
 };

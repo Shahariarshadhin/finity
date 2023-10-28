@@ -3,7 +3,7 @@ import HEROIMG from "../@media/heroimg.png"
 
 const HomeHero = () => {
   return (
-    <div className="flex justify-between flex-col lg:flex-row ">
+    <div className="flex justify-between flex-col lg:flex-row mt-[80px]">
       <div>
         <h1 className="text-[#1D293F] text-[40px] lg:text-[70px]  font-bold leading-[70px] ">
           Get valuable <br /> leads inside
