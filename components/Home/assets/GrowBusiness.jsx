@@ -10,7 +10,7 @@ const GrowBusiness = () => {
 
         <div className=" space-y-8">
           <div className="flex items-center gap-7">
-            icon
+          <Image className="" src="/growbusiness/GB_1-removebg-preview.png" alt="logo" width={83} height={89} />
             <div>
               <h1 className="text-[#1D293F] text-[21px] font-bold mb-2">
                 Find better leads
@@ -22,7 +22,7 @@ const GrowBusiness = () => {
           </div>
 
           <div className="flex items-center gap-7">
-            icon
+          <Image className="" src="/growbusiness/GB_2-removebg-preview.png" alt="logo" width={83} height={89} />
             <div>
               <h1 className="text-[#1D293F] text-[21px] font-bold mb-2">
                 Set instant meeting
@@ -34,7 +34,7 @@ const GrowBusiness = () => {
           </div>
 
           <div className="flex items-center gap-7">
-            icon
+          <Image className="" src="/growbusiness/GB_3-removebg-preview.png" alt="logo" width={83} height={89} />
             <div>
               <h1 className="text-[#1D293F] text-[21px] font-bold mb-2">
                 Get paid seemlessly
