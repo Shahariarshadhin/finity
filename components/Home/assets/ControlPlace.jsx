@@ -12,13 +12,13 @@ const ControlPlace = () => {
         <div className="absolute right-0 lg:right-56 top-24">
         <Image src="/control/Bitmap2.png" alt="logo" width={219} height={95} />
         </div>
-        <div className="w-[193px] absolute bg-white bottom-20 left-0 lg:left-64 rounded-sm">
+        {/* <div className="w-[193px] absolute bg-white bottom-20 left-0 lg:left-64 rounded-sm">
             <h1>Meeting with John</h1>
             <p>11:15am, Sep 10, Sunday</p>
             <p>Agenda:</p>
             <p>How to get more customers for your ecommerce business</p>
             
-        </div>
+        </div> */}
       </div>
     </div>
   );
